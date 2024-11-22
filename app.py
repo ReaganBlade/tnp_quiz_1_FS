@@ -89,7 +89,7 @@ class Quiz:
             selected_answer = st.radio(
                 self.__quiz_list[subj][question]['ques'],
                 self.__quiz_list[subj][question]['opt'],
-                index=-1,
+                # index=-1,
                 key=f"question_{question}"
             )
             answers.append((selected_answer, self.__quiz_list[subj][question]['ans']))
